@@ -25,8 +25,14 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script>
         const options = {
-            center: [30, -26],
-            zoom: 2,
+            center: [33.726, -84.365],
+            zoom: 9,
+            minZoom: 9,
+            maxZoom: 16,
+            maxBounds: [
+                [33.911, -84.032],
+                [33.62, -84.772],
+            ],
         };
 
         const map = L.map('map', options);
